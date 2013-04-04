@@ -42,7 +42,8 @@ function listFeeds() {
         if (!err) {
             body.rows.forEach(function(doc) {
                 console.log(doc.id);
-                fetchFeed(doc.id);
+                //check that we dont' grab the design documents
+                if(doc.id !== '_design/feeds') fetchFeed(doc.id);
             });
         }
     });

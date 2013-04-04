@@ -1,0 +1,13 @@
+{
+   "_id": "_design/feeds",
+   "_rev": "2-5d76d9b854dbda21ad7dd6fa26991db5",
+   "language": "javascript",
+   "views": {
+       "all_items": {
+           "map": "function(doc) {\n  emit(doc._id, doc.items);\n}"
+       },
+       "all_items_by_time": {
+           "map": "function(doc) {\n  doc.items.forEach(function(item) {\n     emit(doc._id, item.date);\n  });\n}"
+       }
+   }
+}
