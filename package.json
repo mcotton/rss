@@ -1,0 +1,19 @@
+{
+  "name": "rss",
+  "version": "0.0.0",
+  "description": "ERROR: No README.md file found!",
+  "main": "app.js",
+  "dependencies": {
+    "blindparser": "~0.0.19",
+    "nano": "~3.3.8",
+    "opmlparser": "~0.4.2-alpha",
+    "request": "~2.16.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD"
+}
